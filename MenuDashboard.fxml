@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="860.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sugoisushi.SugoiSushi.MenuDashboardController">
+   <children>
+      <ImageView fitHeight="860.0" fitWidth="1250.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@BG02.png" />
+         </image>
+      </ImageView>
+      <GridPane alignment="TOP_CENTER" gridLinesVisible="true" layoutX="140.0" layoutY="180.0" prefHeight="89.0" prefWidth="885.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fitHeight="68.0" fitWidth="158.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@05tuna.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="69.0" fitWidth="165.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@01salmon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="72.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+               <image>
+                  <Image url="@02maki01.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="73.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+               <image>
+                  <Image url="@03maki02.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+      <GridPane alignment="CENTER" gridLinesVisible="true" layoutX="140.0" layoutY="345.0" prefHeight="89.0" prefWidth="885.0">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <ImageView fitHeight="67.0" fitWidth="137.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@04egg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="71.0" fitWidth="167.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@09fish03.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="68.0" fitWidth="134.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+               <image>
+                  <Image url="@08fish02.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="70.0" fitWidth="137.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+               <image>
+                  <Image url="@07fish01.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+      <CheckBox fx:id="tunaNigiri" layoutX="199.0" layoutY="269.0" mnemonicParsing="false" onAction="#checkboxListener" text="Tuna Nigiri " textFill="WHITE" />
+      <Label layoutX="202.0" layoutY="300.0" text="39 SAR (4 pcs) " textFill="WHITE" />
+      <Label layoutX="542.0" layoutY="26.0" text="Menu" textFill="WHITE">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Label>
+      <GridPane alignment="CENTER" gridLinesVisible="true" layoutX="135.0" layoutY="514.0" prefHeight="105.0" prefWidth="885.0">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <ImageView fitHeight="70.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@06octopus.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="85.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@10roe.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="90.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+               <image>
+                  <Image url="@11uni.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="85.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+               <image>
+                  <Image url="@12uni02.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+      <CheckBox fx:id="salmonNigiri" layoutX="421.0" layoutY="270.0" mnemonicParsing="false" onAction="#checkboxListener" text="Salmon Nigiri " textFill="WHITE" />
+      <Label layoutX="433.0" layoutY="300.0" text="41 SAR (4 pcs) " textFill="WHITE" />
+      <CheckBox fx:id="salmonRoll" layoutX="642.0" layoutY="270.0" mnemonicParsing="false" onAction="#checkboxListener" text="Salmon Roll" textFill="WHITE" />
+      <Label layoutX="646.0" layoutY="300.0" text="40 SAR (4 pcs) " textFill="WHITE" />
+      <CheckBox fx:id="caliMaki" layoutX="848.0" layoutY="270.0" mnemonicParsing="false" onAction="#checkboxListener" text="California Maki" textFill="WHITE" />
+      <Label layoutX="862.0" layoutY="300.0" text="44 SAR (4 pcs) " textFill="WHITE" />
+      <CheckBox fx:id="tamago" layoutX="198.0" layoutY="435.0" mnemonicParsing="false" onAction="#checkboxListener" text="Tamagoyaki" textFill="WHITE" />
+      <Label layoutX="203.0" layoutY="465.0" text="31 SAR (4 pcs) " textFill="WHITE" />
+      <CheckBox fx:id="mackNigiri" layoutX="418.0" layoutY="435.0" mnemonicParsing="false" onAction="#checkboxListener" text="Mackerel Nigiri" textFill="WHITE" />
+      <Label layoutX="433.0" layoutY="465.0" text="38 SAR (4 pcs) " textFill="WHITE" />
+      <CheckBox fx:id="unagiNigiri" layoutX="626.0" layoutY="435.0" mnemonicParsing="false" onAction="#checkboxListener" text="Unagi Nigiri (Eel)" textFill="WHITE" />
+      <Label layoutX="646.0" layoutY="464.0" text="43 SAR (4 pcs) " textFill="WHITE" />
+      <CheckBox fx:id="shimeSaba" layoutX="835.0" layoutY="435.0" mnemonicParsing="false" onAction="#checkboxListener" text="Shime Saba Nigiri" textFill="WHITE" />
+      <Label layoutX="862.0" layoutY="465.0" text="39 SAR (4 pcs) " textFill="WHITE" />
+      <CheckBox fx:id="takoNigiri" layoutX="169.0" layoutY="620.0" mnemonicParsing="false" onAction="#checkboxListener" text="Tako (Octopus) Nigiri " textFill="WHITE" />
+      <Label layoutX="198.0" layoutY="650.0" text=" 42 SAR (4 pcs) " textFill="WHITE" />
+      <CheckBox fx:id="ikuraNigiri" layoutX="417.0" layoutY="621.0" mnemonicParsing="false" onAction="#checkboxListener" text="Ikura Nigiri " textFill="WHITE" />
+      <Label layoutX="429.0" layoutY="650.0" text="41 SAR (4 pcs) " textFill="WHITE" />
+      <CheckBox fx:id="uniNigiri" layoutX="638.0" layoutY="621.0" mnemonicParsing="false" onAction="#checkboxListener" text="Uni Nigiri" textFill="WHITE" />
+      <Label layoutX="642.0" layoutY="651.0" text="36 SAR (4 pcs) " textFill="WHITE" />
+      <CheckBox fx:id="tobikoNigiri" layoutX="844.0" layoutY="620.0" mnemonicParsing="false" onAction="#checkboxListener" text="Tobiko Nigiri" textFill="WHITE" />
+      <Label layoutX="858.0" layoutY="650.0" text="44 SAR (4 pcs) " textFill="WHITE" />
+      <Button fx:id="checkoutBtn" layoutX="1028.0" layoutY="754.0" mnemonicParsing="false" onAction="#handleCheckoutAction" text="Checkout">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="858.0" fitWidth="113.0" layoutX="1141.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@01border.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="nameLabel" layoutX="58.0" layoutY="76.0" prefHeight="26.0" prefWidth="276.0" text="Hello, " textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="contact" layoutX="58.0" layoutY="105.0" prefHeight="26.0" prefWidth="276.0" text="Contact:" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
